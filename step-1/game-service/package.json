@@ -1,0 +1,14 @@
+{
+  "name": "multiple-mongo",
+  "version": "1.0.0",
+  "description": "A simple node app with multiple mongo connections",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Adriano Grimolizzi",
+  "license": "ISC",
+  "dependencies": {
+    "database-client": "../database-client",
+    "nodemon": "^2.0.7"
+  }
+}

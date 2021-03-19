@@ -1,9 +1,16 @@
 version: "2"
 services:
-  mongo:
-    container_name: mongo
+  mongo1:
+    container_name: mongo1
     image: mongo
     volumes:
-      - ./data:/data/db
+      - ./data:/data/db1
     ports:
       - "27017:27017"
+  mongo2:
+    container_name: mongo2
+    image: mongo
+    volumes:
+      - ./data:/data/db2
+    ports:
+      - "27018:27017"
