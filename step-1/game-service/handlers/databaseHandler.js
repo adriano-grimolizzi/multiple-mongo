@@ -1,13 +1,22 @@
 const GameModel = require("../model/GameModel");
 
-const printElements = (err, elements) => {
-  console.log(JSON.stringify(elements, null, 2));
+const findAllGames = () => {
+  return GameModel.find({});
 };
 
-function printAllGames() {
-  GameModel.find({}, printElements);
-}
+const saveGame = (game) => {
+  const game1 = new GameModel(game);
+  game1.save((err, game) => {
+    if (err) {
+      return console.error(err);
+    }
+    console.log(`${game.name} saved to DB`);
+  });
+};
 
 module.exports = {
-  printAllGames,
+  findAllGames,
+  saveGame,
 };
+
+// console.log(JSON.stringify(elements, null, 2));

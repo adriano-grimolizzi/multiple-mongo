@@ -8,7 +8,9 @@
   "author": "Adriano Grimolizzi",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "database-client": "../database-client",
+    "express": "^4.17.1",
     "nodemon": "^2.0.7"
   }
 }

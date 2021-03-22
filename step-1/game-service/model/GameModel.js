@@ -1,7 +1,7 @@
-const databaseClient = require("database-client");
+const { mongoose, connection1 } = require("database-client");
 
-const gameSchema = new databaseClient.mongoose.Schema({ name: String });
+const gameSchema = new mongoose.Schema({ name: String });
 
-const GameModel = databaseClient.connection1.model("Game", gameSchema);
+const GameModel = connection1.model("Game", gameSchema);
 
 module.exports = GameModel;
