@@ -1,0 +1,11 @@
+const databaseHandler = require("./gamesDbHandler");
+
+exports.get = async (req, res) => {
+  const games = await databaseHandler.findAllGames();
+  res.send(games);
+};
+
+exports.post = async (req, res) => {
+  await databaseHandler.saveGame(req.body);
+  res.send(`Game ${req.body.name} has been saved.`);
+};

@@ -1,4 +1,4 @@
-const GameModel = require("../model/GameModel");
+const GameModel = require("./GameModel");
 
 const findAllGames = () => {
   return GameModel.find({});
