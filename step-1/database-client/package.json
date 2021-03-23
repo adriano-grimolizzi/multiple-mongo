@@ -9,6 +9,7 @@
   "author": "Adriano Grimolizzi",
   "license": "ISC",
   "dependencies": {
+    "config": "^3.3.6",
     "mongoose": "^5.12.0"
   }
 }

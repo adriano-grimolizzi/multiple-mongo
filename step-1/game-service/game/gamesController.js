@@ -6,6 +6,6 @@ exports.get = async (req, res) => {
 };
 
 exports.post = async (req, res) => {
-  await databaseHandler.saveGame(req.body);
+  databaseHandler.saveGame(req.body);
   res.send(`Game ${req.body.name} has been saved.`);
 };

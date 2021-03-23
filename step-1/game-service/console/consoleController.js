@@ -8,6 +8,6 @@ exports.get = async (req, res) => {
 
 exports.post = async (req, res) => {
   console.log("CONSOLE CONTROLLER: POST");
-  await databaseHandler.saveConsole(req.body);
+  databaseHandler.saveConsole(req.body);
   res.send(`Console ${req.body.name} has been saved.`);
 };

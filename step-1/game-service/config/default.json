@@ -1,0 +1,12 @@
+{
+  "mongo1": {
+    "host": "localhost",
+    "port": 27017,
+    "dbName": "database1"
+  },
+  "mongo2": {
+    "host": "localhost",
+    "port": 27018,
+    "dbName": "database2"
+  }
+}
