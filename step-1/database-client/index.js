@@ -7,12 +7,12 @@ const options = {
 
 // It's possible to use multiple connections using 'mongoose.createConnection()'
 const connection1 = mongoose.createConnection(
-  "mongodb://localhost/database1",
+  "mongodb://localhost:27017/database1",
   options
 );
 
 const connection2 = mongoose.createConnection(
-  "mongodb://localhost/database2",
+  "mongodb://localhost:27018/database2",
   options
 );
 
